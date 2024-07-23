@@ -10,6 +10,14 @@
   "description": "",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
-    "cypress": "^13.13.1"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "cypress": "^13.13.1",
+    "esbuild": "^0.23.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+    "cypress/e2e/step_definitions/**/*.{js,ts}"
+  ]
   }
 }
